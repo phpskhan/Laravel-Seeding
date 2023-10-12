@@ -7,6 +7,34 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+# All About Laravel Seeding
+
+## What is Seeding?
+Adding data to the database tables dynamically.
+
+## Seeding Schema
+
+    public function run(): void
+    {
+        //
+        DB::table('ksabih')->insert([
+            'name'=>'Khurram Sabih',
+            'email'=>Str::random(10).'@gmail.com',
+            'age'=>Str::random(3),
+            'password' => Hash::make('adminPassword')            
+        ]);
+    }
+}
+
+
+## Create Seeder File
+Php artisan make:seeder ksabihSeeder
+
+## Seeding Data to Table
+Php artisan db:seed --class=KsabihSeede
+
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:

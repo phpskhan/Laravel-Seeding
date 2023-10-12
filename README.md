@@ -7,7 +7,7 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-# All About Laravel Seeding
+# All About Laravel 10 Seeding
 
 ## What is Seeding?
 Adding data to the database tables dynamically.
